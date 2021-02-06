@@ -1,0 +1,281 @@
+------
+palavra: KRAKEN
+---
+(0, 0)
+call procura >: lin:0, col:0 (lin:0, col:1)
+---
+return 0      : lin:0, col:1 (lin:0, col:0)
+call procura <: lin:0, col:0 (lin:0, col:-1)
+---
+return aleluia: lin:0, col:-1 (lin:0, col:0)
+call procura v: lin:0, col:0 (lin:1, col:0)
+---
+return 0      : lin:1, col:0 (lin:0, col:0)
+call procura ^: lin:0, col:0 (lin:-1, col:0)
+---
+return aleluia: lin:-1, col:0 (lin:0, col:0)
+return procura 1: lin:0, col:0 (lin:0, col:1)
+---
+return procura 2: lin:0, col:1 (lin:0, col:2)
+---
+return procura 2: lin:0, col:2 (lin:0, col:3)
+---
+return procura 2: lin:0, col:3 (lin:0, col:4)
+---
+return procura 2: lin:0, col:4 (lin:1, col:0)
+---
+return procura 2: lin:1, col:0 (lin:1, col:1)
+---
+return procura 2: lin:1, col:1 (lin:1, col:2)
+---
+return procura 2: lin:1, col:2 (lin:1, col:3)
+---
+return procura 2: lin:1, col:3 (lin:1, col:4)
+---
+return procura 2: lin:1, col:4 (lin:2, col:0)
+---
+return procura 2: lin:2, col:0 (lin:2, col:1)
+---
+return procura 2: lin:2, col:1 (lin:2, col:2)
+---
+(2, 2)
+call procura >: lin:2, col:2 (lin:2, col:3)
+---
+(2, 2)(2, 3)
+call procura >: lin:2, col:3 (lin:2, col:4)
+---
+(2, 2)(2, 3)(2, 4)
+call procura >: lin:2, col:4 (lin:2, col:5)
+---
+return aleluia: lin:2, col:5 (lin:0, col:0)
+call procura v: lin:2, col:4 (lin:3, col:4)
+---
+(2, 2)(2, 3)(2, 4)(3, 4)
+call procura >: lin:3, col:4 (lin:3, col:5)
+---
+return aleluia: lin:3, col:5 (lin:0, col:0)
+call procura <: lin:3, col:4 (lin:3, col:3)
+---
+return 0      : lin:3, col:3 (lin:0, col:0)
+call procura v: lin:3, col:4 (lin:4, col:4)
+---
+(2, 2)(2, 3)(2, 4)(3, 4)(4, 4)
+call procura >: lin:4, col:4 (lin:4, col:5)
+---
+return aleluia: lin:4, col:5 (lin:0, col:0)
+call procura <: lin:4, col:4 (lin:4, col:3)
+---
+(2, 2)(2, 3)(2, 4)(3, 4)(4, 4)(4, 3)
+return 1      : lin:4, col:3 (lin:0, col:0)
+return aleluia: lin:4, col:4 (lin:3, col:4)
+return aleluia: lin:3, col:4 (lin:2, col:4)
+return aleluia: lin:2, col:4 (lin:1, col:4)
+return aleluia: lin:2, col:3 (lin:1, col:3)
+return aleluia: lin:2, col:2 (lin:1, col:2)
+sim
+------
+palavra: FORTE
+---
+return procura 2: lin:0, col:0 (lin:0, col:1)
+---
+return procura 2: lin:0, col:1 (lin:0, col:2)
+---
+return procura 2: lin:0, col:2 (lin:0, col:3)
+---
+return procura 2: lin:0, col:3 (lin:0, col:4)
+---
+return procura 2: lin:0, col:4 (lin:1, col:0)
+---
+return procura 2: lin:1, col:0 (lin:1, col:1)
+---
+return procura 2: lin:1, col:1 (lin:1, col:2)
+---
+(1, 2)
+call procura >: lin:1, col:2 (lin:1, col:3)
+---
+(1, 2)(1, 3)
+call procura >: lin:1, col:3 (lin:1, col:4)
+---
+(1, 2)(1, 3)(1, 4)
+call procura >: lin:1, col:4 (lin:1, col:5)
+---
+return aleluia: lin:1, col:5 (lin:0, col:0)
+call procura v: lin:1, col:4 (lin:2, col:4)
+---
+return 0      : lin:2, col:4 (lin:0, col:0)
+call procura ^: lin:1, col:4 (lin:0, col:4)
+---
+return 0      : lin:0, col:4 (lin:0, col:0)
+return procura 1: lin:1, col:4 (lin:1, col:3)
+---
+return procura 2: lin:1, col:3 (lin:1, col:4)
+---
+return procura 2: lin:1, col:4 (lin:2, col:0)
+---
+return procura 2: lin:2, col:0 (lin:2, col:1)
+---
+return procura 2: lin:2, col:1 (lin:2, col:2)
+---
+return procura 2: lin:2, col:2 (lin:2, col:3)
+---
+return procura 2: lin:2, col:3 (lin:2, col:4)
+---
+return procura 2: lin:2, col:4 (lin:3, col:0)
+---
+return procura 2: lin:3, col:0 (lin:3, col:1)
+---
+return procura 2: lin:3, col:1 (lin:3, col:2)
+---
+return procura 2: lin:3, col:2 (lin:3, col:3)
+---
+return procura 2: lin:3, col:3 (lin:3, col:4)
+---
+return procura 2: lin:3, col:4 (lin:4, col:0)
+---
+return procura 2: lin:4, col:0 (lin:4, col:1)
+---
+return procura 2: lin:4, col:1 (lin:4, col:2)
+---
+return procura 2: lin:4, col:2 (lin:4, col:3)
+---
+return procura 2: lin:4, col:3 (lin:4, col:4)
+---
+return procura 2: lin:4, col:4 (lin:5, col:0)
+---
+return aleluia: lin:5, col:0 (lin:0, col:0)
+call procura v: lin:1, col:3 (lin:2, col:3)
+---
+(1, 2)(1, 3)(2, 3)
+call procura >: lin:2, col:3 (lin:2, col:4)
+---
+return 0      : lin:2, col:4 (lin:0, col:0)
+call procura <: lin:2, col:3 (lin:2, col:2)
+---
+return 0      : lin:2, col:2 (lin:0, col:0)
+call procura v: lin:2, col:3 (lin:3, col:3)
+---
+return 0      : lin:3, col:3 (lin:0, col:0)
+return procura 1: lin:2, col:3 (lin:1, col:3)
+---
+return procura 2: lin:1, col:3 (lin:1, col:4)
+---
+return procura 2: lin:1, col:4 (lin:2, col:0)
+---
+return procura 2: lin:2, col:0 (lin:2, col:1)
+---
+return procura 2: lin:2, col:1 (lin:2, col:2)
+---
+return procura 2: lin:2, col:2 (lin:2, col:3)
+---
+return procura 2: lin:2, col:3 (lin:2, col:4)
+---
+return procura 2: lin:2, col:4 (lin:3, col:0)
+---
+return procura 2: lin:3, col:0 (lin:3, col:1)
+---
+return procura 2: lin:3, col:1 (lin:3, col:2)
+---
+return procura 2: lin:3, col:2 (lin:3, col:3)
+---
+return procura 2: lin:3, col:3 (lin:3, col:4)
+---
+return procura 2: lin:3, col:4 (lin:4, col:0)
+---
+return procura 2: lin:4, col:0 (lin:4, col:1)
+---
+return procura 2: lin:4, col:1 (lin:4, col:2)
+---
+return procura 2: lin:4, col:2 (lin:4, col:3)
+---
+return procura 2: lin:4, col:3 (lin:4, col:4)
+---
+return procura 2: lin:4, col:4 (lin:5, col:0)
+---
+return aleluia: lin:5, col:0 (lin:0, col:0)
+call procura ^: lin:1, col:3 (lin:0, col:3)
+---
+return 0      : lin:0, col:3 (lin:0, col:0)
+return procura 1: lin:1, col:3 (lin:1, col:3)
+---
+return procura 2: lin:1, col:3 (lin:1, col:4)
+---
+return procura 2: lin:1, col:4 (lin:2, col:0)
+---
+return procura 2: lin:2, col:0 (lin:2, col:1)
+---
+return procura 2: lin:2, col:1 (lin:2, col:2)
+---
+return procura 2: lin:2, col:2 (lin:2, col:3)
+---
+return procura 2: lin:2, col:3 (lin:2, col:4)
+---
+return procura 2: lin:2, col:4 (lin:3, col:0)
+---
+return procura 2: lin:3, col:0 (lin:3, col:1)
+---
+return procura 2: lin:3, col:1 (lin:3, col:2)
+---
+return procura 2: lin:3, col:2 (lin:3, col:3)
+---
+return procura 2: lin:3, col:3 (lin:3, col:4)
+---
+return procura 2: lin:3, col:4 (lin:4, col:0)
+---
+return procura 2: lin:4, col:0 (lin:4, col:1)
+---
+return procura 2: lin:4, col:1 (lin:4, col:2)
+---
+return procura 2: lin:4, col:2 (lin:4, col:3)
+---
+return procura 2: lin:4, col:3 (lin:4, col:4)
+---
+return procura 2: lin:4, col:4 (lin:5, col:0)
+---
+return aleluia: lin:5, col:0 (lin:0, col:0)
+call procura <: lin:1, col:2 (lin:1, col:1)
+---
+return 0      : lin:1, col:1 (lin:0, col:0)
+call procura v: lin:1, col:2 (lin:2, col:2)
+---
+return 0      : lin:2, col:2 (lin:0, col:0)
+call procura ^: lin:1, col:2 (lin:0, col:2)
+---
+return 0      : lin:0, col:2 (lin:0, col:0)
+return procura 1: lin:1, col:2 (lin:1, col:3)
+---
+return procura 2: lin:1, col:3 (lin:1, col:4)
+---
+return procura 2: lin:1, col:4 (lin:2, col:0)
+---
+return procura 2: lin:2, col:0 (lin:2, col:1)
+---
+return procura 2: lin:2, col:1 (lin:2, col:2)
+---
+return procura 2: lin:2, col:2 (lin:2, col:3)
+---
+return procura 2: lin:2, col:3 (lin:2, col:4)
+---
+return procura 2: lin:2, col:4 (lin:3, col:0)
+---
+return procura 2: lin:3, col:0 (lin:3, col:1)
+---
+return procura 2: lin:3, col:1 (lin:3, col:2)
+---
+return procura 2: lin:3, col:2 (lin:3, col:3)
+---
+return procura 2: lin:3, col:3 (lin:3, col:4)
+---
+return procura 2: lin:3, col:4 (lin:4, col:0)
+---
+return procura 2: lin:4, col:0 (lin:4, col:1)
+---
+return procura 2: lin:4, col:1 (lin:4, col:2)
+---
+return procura 2: lin:4, col:2 (lin:4, col:3)
+---
+return procura 2: lin:4, col:3 (lin:4, col:4)
+---
+return procura 2: lin:4, col:4 (lin:5, col:0)
+---
+return aleluia: lin:5, col:0 (lin:0, col:0)
+nao
